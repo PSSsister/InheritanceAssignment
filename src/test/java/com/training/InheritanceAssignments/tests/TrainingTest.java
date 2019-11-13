@@ -1,4 +1,4 @@
-package com.training.InheritanceAssignments.tests;
+package com.training.inheritanceassignments.tests;
 
 import static org.junit.Assert.*;
 
