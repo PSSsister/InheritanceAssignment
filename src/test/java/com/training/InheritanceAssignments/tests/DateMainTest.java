@@ -12,8 +12,15 @@ import org.junit.Test;
 
 import com.training.inheritanceassignments.DateMain;
 
+/**
+ * @author 
+ *
+ */
 public class DateMainTest {
 
+	/**
+	 * @throws ParseException
+	 */
 	@Test
 	public void testToPrintDateWithNoArgumentConstructor() throws ParseException {
 		
@@ -26,7 +33,10 @@ public class DateMainTest {
 		
 		
 	}
-   @Test
+   /**
+ * @throws ParseException
+ */
+@Test
    public void testToPrintDateUsingParameterizedArgumentConstructor() throws ParseException {
 	        
 	        SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");

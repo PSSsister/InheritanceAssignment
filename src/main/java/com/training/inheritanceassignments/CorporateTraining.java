@@ -1,14 +1,27 @@
 package com.training.inheritanceassignments;
 
+/**
+ * @author pripawar
+ *
+ */
 public class CorporateTraining extends Training {
 
 	private int noOfDays;
-	//constructor without argument
+	
+	/**
+	 * constructor without argument
+	 */
 	public CorporateTraining()
 	{
 		super();
 	}
-   //constructor with parameter to initialize the object
+   /**
+ * @param subject
+ * @param fees
+ * @param noOfDays
+ * constructor with parameter to initialize the object
+ */
+
 	public CorporateTraining(String subject,double fees,int noOfDays) {
 		super(subject,fees);
 		this.noOfDays = noOfDays;

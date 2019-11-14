@@ -26,7 +26,7 @@ public class EmployeeTest {
     @Test
 	public void testShowDetailsByPassingObjectOfManagerAsParameteInParentClass() throws InvalidInputException {
 	 Employee man=new Manager(100,"abc",23000.0,400);
-     String expected="EmployeeId=100, Employee Name=abc, Basic Salary=23000.0, Hra=11500.0, Medical=400.0, PF=2760.0, PT=200.0, netSalary=31940.0, grossSalary=40420.0, petrolAllowance=1840.0, foodAllowance=2990.0, otherAllowance=690.0";
+     String expected="EmployeeId=100, Employee Name=abc, Basic Salary=23000.0, Hra=11500.0, Medical=400.0, PF=2760.0, PT=200.0, netSalary=37460.0, grossSalary=40420.0, petrolAllowance=1840.0, foodAllowance=2990.0, otherAllowance=690.0";
      assertEquals(expected,Employee.showDetails(man));
 	}
     
@@ -39,17 +39,23 @@ public class EmployeeTest {
 	}
     
     //check whether expected gross salary is equal to the actual gross salary
+	/**
+	 * 
+	 */
 	@Test
-	public void testGrossSalary() {
-	 double grosssalary=emp.grossSalary();
+	public void testCalculateGrossSalary() {
+	 double grosssalary=emp.calculateGrossSalary();
 	 assertEquals(34900.0,grosssalary,0.02);
 	}
 	
 	//check whether expected nets salary is equal to the actual net salary
 
+	/**
+	 * 
+	 */
 	@Test
-	public void testNetSalary() {
-        double netsalary=emp.netSalary();
+	public void testCalculateNetSalary() {
+        double netsalary=emp.calculateNetSalary();
 		assertEquals(31940.0,netsalary,0.02);
 	}
 	
